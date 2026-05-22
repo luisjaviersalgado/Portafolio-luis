@@ -349,7 +349,7 @@ function Header({ lang, setLang }: { lang: Lang; setLang: React.Dispatch<React.S
       <nav className={`nav ${open ? 'is-open' : ''}`}>
         {t.nav.map((item) => <button key={item} type="button" onClick={() => goTo(item)}>{item}</button>)}
         <button className="language-toggle" type="button" onClick={() => setLang((current) => current === 'es' ? 'en' : 'es')}><Languages size={16} /> {t.langLabel}</button>
-        <a className="cv-button" href="/assets/cv-luis-javier-salgado.pdf" target="_blank" rel="noreferrer">{t.cv} <Download size={16} /></a>
+        <a className="cv-button" href={`${import.meta.env.BASE_URL}assets/cv-luis-javier-salgado.pdf`} target="_blank" rel="noreferrer" download>{t.cv} <Download size={16} /></a>
       </nav>
     </header>
   );
@@ -370,7 +370,7 @@ function Hero({ lang }: { lang: Lang }) {
       </motion.div>
       <motion.div className="hero-visual" style={{ y }} initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.9 }}>
         <div className="orbit orbit-one" /><div className="orbit orbit-two" />
-        <div className="portrait-ring"><img src="/assets/profile.jpg" alt="Foto de perfil de Luis Javier Salgado" onError={(event) => { event.currentTarget.src = '/assets/profile.svg'; }} /></div>
+        <div className="portrait-ring"><img src={`${import.meta.env.BASE_URL}assets/profile.jpg`} alt="Foto de perfil de Luis Javier Salgado" onError={(event) => { event.currentTarget.src = `${import.meta.env.BASE_URL}assets/profile.svg`; }} /></div>
         <FloatingIcon className="float-one" icon={<Code2 />} /><FloatingIcon className="float-two" icon={<Database />} /><FloatingIcon className="float-three" icon={<Rocket />} /><FloatingIcon className="float-four" icon={<Layers3 />} />
         <div className="availability"><span /> {t.available}</div>
       </motion.div>
