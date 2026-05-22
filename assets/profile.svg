@@ -1,0 +1,7 @@
+<svg width="480" height="480" viewBox="0 0 480 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="480" height="480" rx="240" fill="url(#g)"/>
+  <circle cx="240" cy="190" r="78" fill="#0f172a" opacity=".92"/>
+  <path d="M95 420c21-91 83-144 145-144s124 53 145 144" fill="#0f172a" opacity=".92"/>
+  <text x="240" y="455" text-anchor="middle" fill="#fbbf24" font-family="Arial, sans-serif" font-size="44" font-weight="800">LJ</text>
+  <defs><linearGradient id="g" x1="50" y1="40" x2="430" y2="440" gradientUnits="userSpaceOnUse"><stop stop-color="#fbbf24"/><stop offset=".48" stop-color="#fb923c"/><stop offset="1" stop-color="#fde047"/></linearGradient></defs>
+</svg>
